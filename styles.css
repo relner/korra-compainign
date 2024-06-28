@@ -248,16 +248,17 @@ button, .button  {
 }
 
 .reduction-wrapper-percent{
-    width: 306px;
     font-size: 120px;
     font-weight: 200;
     color: #98A2B3;
     padding-right: 24px;
+    min-width: 260px;
 }
 
 .reduction-wrapper-body {
     font-size: 29px;
     font-weight: 100;
+    max-width: 300px;
 }
 
 .cardArrow {
@@ -514,6 +515,7 @@ button, .button  {
     .reduction-wrapper-body {
         padding-bottom: 30px;
         text-align: center;
+        max-width: none;
     }
 
     .what-cora {
