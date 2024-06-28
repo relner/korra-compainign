@@ -30,6 +30,7 @@ header{
     background: linear-gradient(45deg, #06598600 0%, #0086c900 100%), url("./images/header-background.svg") no-repeat 50vh 50vh;
     background-blend-mode: overlay;
     background-size: cover;
+    min-height: 760px;
 }
 
 .header-wrapper {
