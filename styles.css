@@ -1,0 +1,571 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #344054;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+header, main {
+    padding-top: 60px;
+}
+
+header, main, footer {
+    overflow: hidden;
+}
+
+header{
+    background: linear-gradient(45deg, #065986 0%, #0086C9 100%);
+}
+
+.header {
+    color: white;
+    font-size: 32px;
+    background: linear-gradient(45deg, #06598600 0%, #0086c900 100%), url("./images/header-background.svg") no-repeat 50vh 50vh;
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+
+.header-wrapper {
+    display: flex;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.logo-wrapper, .header-wrapper {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.logo-wrapper {
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.header-left-side {
+    margin-right: -110px;
+}
+
+footer {
+    background-color: #344054;
+    color: white;
+    font-size: 20px;
+    padding: 60px;
+}
+
+.header-title {
+    font-size: 54px;
+    font-weight: 200;
+    padding-top: 130px;
+    line-height: 62px;
+}
+
+.header-subtitle {
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 34px
+}
+
+.header-main-text {
+    font-size: 20px;
+}
+
+.header-action-button {
+    margin-top: 40px;
+}
+
+.body-title {
+    font-size: 40px;
+    font-weight: 200;
+    padding-top: 90px;
+    text-align: center;
+    color: #344054;
+}
+
+.get-started {
+    display: flex;
+    justify-content: center;
+}
+
+.get-started div {
+    margin: 0 -40px;
+    margin-top: 4px;
+}
+
+.get-started-title {
+    font-weight: 700;
+}
+
+.get-started-button-wrapper {
+    padding: 30px; 
+    text-align: center;
+}
+
+.main-banner-wrapper {
+    margin-right: -100px;
+    margin-top: -100px;
+}
+
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    overflow: hidden;
+    background-color: white;
+}
+
+.video-container {
+    position: relative;
+}
+
+.video-container video {
+    max-width: 100%;
+    height: auto;
+}
+
+.video-container.tablet {
+    display: none;
+}
+
+.video-container.desktop {
+    display: block;
+}
+
+.video-container.mobile {
+    display: none;
+}
+
+.logos-carusel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.logos-carusel div {
+    margin: 0 10px;
+}
+
+.logos-carusel-title {
+    text-align: center; 
+    text-transform: uppercase; 
+    font-size: 18px; 
+    font-weight: 400; 
+    color: #98A2B3
+}
+
+.get-started-wrapper {
+    max-width: 1100px; 
+    margin: auto; 
+    display: flex; 
+    padding-right: 19px; 
+    padding-left: 19px; 
+    margin-top: 30px;
+}
+
+.get-started-card {
+    padding-right: 38px;
+}
+
+.mobile-image-wrapper {
+    display: none;
+}
+
+button, .button  {
+    padding: 15px 62px;
+    border-radius: 32px;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #0BA5EC;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.get-started {
+    height: 290px;
+    background: url("./images/get-started-bg.svg") no-repeat center center;    
+}
+
+.what-to-get {
+    background: linear-gradient(45deg, #065986 0%, #0086C9 100%);    
+}
+
+.what-to-get-wrapper {
+    background: url("./images/what-to-do-bg-three.svg") no-repeat -30% 90%;    
+    text-align: center;
+    color: white;
+    padding: 90px;
+}
+.what-to-get-title {
+    font-size: 34px;
+    font-weight: 200;
+ }
+
+.what-to-get-cards-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.what-to-get-card {
+    margin: 20px;
+}
+
+.what-to-get-card-in {
+    padding: 12px; 
+    width: 50px; 
+    height: 40px; 
+    margin: auto;
+}
+
+.reduction-wrapper {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    padding-top: 85px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.reduction-wrapper-card{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.reduction-wrapper-percent{
+    width: 306px;
+    font-size: 120px;
+    font-weight: 200;
+    color: #98A2B3;
+    padding-right: 24px;
+}
+
+.reduction-wrapper-body {
+    font-size: 29px;
+    font-weight: 100;
+}
+
+.cardArrow {
+    opacity: 0; /* Начальное состояние для анимации */
+    transform: translateY(20px); /* Начальное состояние для анимации */
+}
+
+.cardArrow.visible {
+    opacity: 1; /* Конечное состояние для анимации */
+    transform: translateY(0); /* Конечное состояние для анимации */
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 58px;
+    max-width: 1356px;
+    margin: auto;
+}
+
+.card {
+    background-color: #E0F2FE;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 2px 16px rgba(90, 90, 90, 0.1);
+    text-align: left;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 10px solid white;
+
+    opacity: 0; /* Начальное состояние для анимации */
+    transform: translateY(20px); /* Начальное состояние для анимации */
+}
+
+.card img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 16px;
+}
+
+.card .card-title {
+    font-size: 1.25em;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.card p {
+    font-size: 0.95em;
+    color: #666;
+    margin: 0;
+}
+
+.card.visible {
+    opacity: 1; /* Конечное состояние для анимации */
+    transform: translateY(0); /* Конечное состояние для анимации */
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.cards-action-wrapper {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-link-img {
+    text-decoration: none;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+.trasted-logos {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    padding-bottom: 120px;
+}
+
+.footes-links-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trasted-logos img {
+    margin: 30px;
+    max-width: calc(100% - 60px);
+}
+
+.capterra-small {
+    width: 200px; 
+    height: 200px
+}
+
+.capterra-medium {
+    width: 260px; 
+    height: 124px;
+}
+
+@media (max-width: 1455px) {
+    .main-banner-wrapper {
+        margin-right: -200px;    
+    }
+}
+
+@media (max-width: 1300px) {
+    .main-banner-wrapper {
+        margin-right: -260px;    
+    }
+}
+/* mobile */
+@media (max-width: 1120px) {
+    .header-wrapper {
+        flex-direction: column;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .header-left-side {
+        margin-right: 0;
+    }
+
+    .main-banner-wrapper {
+        margin-right: -100px;
+        margin-left: -100px;
+        margin-top: 0;
+        margin-bottom: -60px;
+    }
+
+    .main-banner-wrapper img {
+        width: 100%;
+    }
+
+    .header-title {
+        font-size: 42px;
+        padding-top: 80px;
+        line-height: 58px;
+    }
+    .header-button-wrapper {
+        text-align: center;
+    }
+    .header-action-button {
+        margin-top: 48px;  
+        align-self: center;
+    }
+    .header-main-text,
+    .header-subtitle {
+        font-size: 19px;
+    }
+
+    .header-subtitle {
+        padding-top: 40px;
+    }
+
+    .logo-wrapper {
+        padding-right: 30px;
+        padding-left: 30px;
+    
+    }
+
+    .logos-carusel {
+        padding-right: 30px;
+        padding-left: 30px;
+        overflow: auto;
+        justify-content: normal;
+    }
+
+    /*Video*/
+    .video-container.tablet {
+        display: block;
+    }
+
+    .video-container.desktop {
+        display: none;
+    }
+
+    .video-container.mobile {
+        display: none;
+    }
+
+    .get-started {
+        display: none;
+    }
+    
+    .get-started-wrapper {
+        flex-direction: column;
+        padding-right: 30px;
+        padding-left: 30px;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .get-started-card {
+        padding: 0;
+    }
+
+    .mobile-image-wrapper {
+        display: block;
+        margin-right: -40px;
+        margin-left: -40px;
+        margin-bottom: -26px;
+        margin-top: 20px;
+    }
+
+    .mobile-image-wrapper img {
+        width: 100%;
+    }
+    
+    .what-to-get-wrapper {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .what-to-get-cards-wrapper {
+        flex-direction: column;
+    }
+
+    .reduction-wrapper {
+        padding-top: 60px;
+        padding-right: 30px;
+        padding-left: 30px;
+        flex-direction: column;
+    }
+
+    .reduction-wrapper-card {
+        flex-direction: column;
+    }
+
+    .reduction-wrapper-percent {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .reduction-wrapper-body {
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .what-cora {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .cards-container {
+        padding: 40px 0 0 0;
+        grid-template-columns: 1fr;
+    }
+    .trasted-logos {
+        flex-direction: column;
+    }
+
+    footer {
+        padding: 40px 30px;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footes-links-wrapper {
+        padding-top: 20px;
+    }
+
+    .footer-link {
+        padding: 0 18px 0 0;        
+    }
+
+    .cardMobileArrow {
+        opacity: 0; /* Начальное состояние для анимации */
+        transform: translateY(20px); /* Начальное состояние для анимации */
+    }
+    
+    .cardMobileArrow.visible {
+        opacity: 1; /* Конечное состояние для анимации */
+        transform: translateY(0); /* Конечное состояние для анимации */
+    }
+}
+
+@media (max-width: 470px) {
+    .video-container.tablet {
+        display: none;
+    }
+
+    .video-container.desktop {
+        display: none;
+    }
+
+    .video-container.mobile {
+        display: block;
+    }
+}
