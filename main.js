@@ -1,41 +1,14 @@
-// vanila javascript code
-// create function and start on load window
-
 window.onload = function() {
-    init();
     animateCardWrqpper();
     animateCardArrowWrqpper();
     animateMobileCardArrowWrqpper();
 };
 
-var init = function() {
-    simpleParallax("header", 3, '20vh');
-    simpleParallax("what-to-get-wrapper", 3, '-30%');
-}
 
 window.addEventListener('scroll', function() {
     onCounterScroll();
     onScroll();
 });
-
-function simpleParallax(elem, modifier, xOffset) {
-    let paras = document.getElementsByClassName(elem);
-    for (let i = 0; i < paras.length; i++) {
-      paras[i].setAttribute(
-        "style",
-        "background-repeat: no-repeat; background-attachment: fixed; background-size: cover; background-position: " + xOffset + " center;"
-      );
-    }
-    const sp = () => {
-      for (let i = 0; i < paras.length; i++) {
-        let x = paras[i].getBoundingClientRect().top / modifier;
-        let y = Math.round(x * 100) / 100;
-        paras[i].style.backgroundPosition = xOffset + " " + y + "px";
-      }
-      requestAnimationFrame(sp);
-    };
-    requestAnimationFrame(sp);
-};
 
 function animateCounter(id, target) {
   const element = document.getElementById(id);

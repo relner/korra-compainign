@@ -27,7 +27,7 @@ header{
 .header {
     color: white;
     font-size: 32px;
-    background: linear-gradient(45deg, #06598600 0%, #0086c900 100%), url("./images/header-background.svg") no-repeat 50vh 50vh;
+    background: linear-gradient(45deg, #06598600 0%, #0086c900 100%), url("./images/header-background.svg") no-repeat 20vh 10vh;
     background-blend-mode: overlay;
     background-size: cover;
     min-height: 760px;
@@ -188,11 +188,11 @@ button, .button  {
     text-align: center;
     white-space: nowrap;
     font-size: 20px;
-    text-transform: uppercase;
     color: white;
     background-color: #0BA5EC;
     text-decoration: none;
     display: inline-block;
+    font-weight: bold;
 }
 
 .get-started {
